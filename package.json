@@ -1,0 +1,28 @@
+{
+  "name": "node_demo",
+  "version": "1.0.0",
+  "description": "node.js with express.js,MongoDB and mongoose ODM",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongo",
+    "mongoose"
+  ],
+  "author": "subha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "mongoose": "^5.7.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
