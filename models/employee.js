@@ -31,6 +31,9 @@ var userDatasSchema = new Schema({
     personalEmailId : String,
     bloodGroup : String,
     gender: String,
+    EmergencyContactName: String,
+    EmergencyContactNumber: String,
+    EmergencyContactRelationship: String,
     Active:String
 }, { collection: 'emp' });//---userDatas Document Properties
 

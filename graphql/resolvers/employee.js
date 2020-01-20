@@ -69,6 +69,9 @@ module.exports = {
                     gender:args.empInput.gender,
                     ResignationDate:args.empInput.ResignationDate,
                     LeavingDate:args.empInput.LeavingDate,
+                    EmergencyContactName:args.empInput.EmergencyContactName,
+                    EmergencyContactNumber:args.empInput.EmergencyContactNumber,
+                    EmergencyContactRelationship:args.empInput.EmergencyContactRelationship,
                     Active:args.empInput.Active
                     };
             let result = await employeeModel.findOneAndUpdate(_filterquery,_updatequery,{new: true});

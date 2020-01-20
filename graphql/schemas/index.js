@@ -32,6 +32,9 @@ type EmpDetail {
     personalEmailId : String
     bloodGroup : String
     gender: String
+    EmergencyContactName: String
+    EmergencyContactNumber: String
+    EmergencyContactRelationship: String
     Active:String
 }
 
@@ -63,6 +66,9 @@ input EmpInput {
     personalEmailId : String!
     bloodGroup : String!
     gender: String!
+    EmergencyContactName: String!
+    EmergencyContactNumber: String!
+    EmergencyContactRelationship: String!
     Active:String!
 }
 
