@@ -1,0 +1,26 @@
+{"_id":{"$oid":"5e157fbb0962ee2514fb403d"},"Department":"HR"}
+{"_id":{"$oid":"5e157fe80962ee2514fb403e"},"Department":"IT"}
+{"_id":{"$oid":"5e1580270962ee2514fb4040"},"BusinessTitle":"Recruiter","DepID":"HR","Level":{"$numberInt":"6"}}
+{"_id":{"$oid":"5e15808bd7af6e2514d08d31"},"BusinessTitle":"Senior Recruiter","DepID":"HR","Level":{"$numberInt":"5"}}
+{"_id":{"$oid":"5e1580a6d7af6e2514d08d32"},"BusinessTitle":"Team Lead","DepID":"HR","Level":{"$numberInt":"4"}}
+{"_id":{"$oid":"5e1580b3d7af6e2514d08d33"},"BusinessTitle":"Manager","DepID":"HR","Level":{"$numberInt":"3"}}
+{"_id":{"$oid":"5e1580dad7af6e2514d08d34"},"BusinessTitle":"VP","DepID":"HR","Level":{"$numberInt":"2"}}
+{"_id":{"$oid":"5e1580f5d7af6e2514d08d35"},"BusinessTitle":"CEO","DepID":"HR","Level":{"$numberInt":"1"}}
+{"_id":{"$oid":"5e1581c4d7af6e2514d08d36"},"BusinessTitle":"Developer","DepID":"IT","Level":{"$numberInt":"6"}}
+{"_id":{"$oid":"5e1581d1d7af6e2514d08d37"},"BusinessTitle":"Senior Developer","DepID":"IT","Level":{"$numberInt":"5"}}
+{"_id":{"$oid":"5e1581dfd7af6e2514d08d38"},"BusinessTitle":"Team Lead","DepID":"IT","Level":{"$numberInt":"4"}}
+{"_id":{"$oid":"5e1581e8d7af6e2514d08d39"},"BusinessTitle":"Manager","DepID":"IT","Level":{"$numberInt":"3"}}
+{"_id":{"$oid":"5e1581f4d7af6e2514d08d3a"},"BusinessTitle":"VP","DepID":"IT","Level":{"$numberInt":"2"}}
+{"_id":{"$oid":"5e1581ffd7af6e2514d08d3b"},"BusinessTitle":"CEO","DepID":"IT","Level":{"$numberInt":"1"}}
+{"_id":{"$oid":"5e1593c70962ee2514fb4042"},"JobBand":"A1"}
+{"_id":{"$oid":"5e15942ed7af6e2514d08d3c"},"JobBand":"A2"}
+{"_id":{"$oid":"5e159435d7af6e2514d08d3d"},"JobBand":"A3"}
+{"_id":{"$oid":"5e1594430962ee2514fb4043"},"EmploymentType":"Contract"}
+{"_id":{"$oid":"5e15945ed7af6e2514d08d3e"},"EmploymentType":"Consultant"}
+{"_id":{"$oid":"5e15946dd7af6e2514d08d3f"},"EmploymentType":"Permanent"}
+{"_id":{"$oid":"5e1594770962ee2514fb4044"},"CompanyId":"SUSPL"}
+{"_id":{"$oid":"5e159493d7af6e2514d08d40"},"CompanyId":"SITS"}
+{"_id":{"$oid":"5e15949ed7af6e2514d08d41"},"CompanyId":"USG"}
+{"_id":{"$oid":"5e1594f50962ee2514fb4045"},"Period":"Weekly"}
+{"_id":{"$oid":"5e159522d7af6e2514d08d42"},"Period":"Monthly"}
+{"_id":{"$oid":"5e159528d7af6e2514d08d43"},"Period":"Fortnightly"}
