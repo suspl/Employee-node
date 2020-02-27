@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 
 var userDatasSchema = new Schema({
-    EmpID: String, 
+    EmpID: Number, 
     FirstName: String,
     MiddleName: String,
     LastName: String,
@@ -21,6 +21,7 @@ var userDatasSchema = new Schema({
     AADHAAR: String,
     PF_UAN: String,
     PassportNo: String,
+    ESI:String,
     JobBand: String,
     EmploymentType: String,
     CompanyID: String,
@@ -34,7 +35,15 @@ var userDatasSchema = new Schema({
     EmergencyContactName: String,
     EmergencyContactNumber: String,
     EmergencyContactRelationship: String,
-    Active:String
+    Active:String,
+    CreatedBy:String,
+    CreatedDateTime:String,
+    UpdatedDateTime:String,
+    UpdatedBy:String,
+    BankName : String,
+    BankAccountNumber:String,
+    IFSCCode:String,
+    Shift:String
 }, { collection: 'emp' });//---userDatas Document Properties
 
 

@@ -5,7 +5,7 @@ module.exports = buildSchema(`
 
 type EmpDetail {
     _id: ID!
-    EmpID: String! 
+    EmpID: Int! 
     FirstName: String!
     MiddleName: String
     LastName: String
@@ -22,6 +22,7 @@ type EmpDetail {
     AADHAAR: String
     PF_UAN: String
     PassportNo: String
+    ESI:String
     JobBand: String
     EmploymentType: String
     CompanyID: String
@@ -36,10 +37,17 @@ type EmpDetail {
     EmergencyContactNumber: String
     EmergencyContactRelationship: String
     Active:String
+    CreatedBy:String
+    CreatedDateTime:String
+    UpdatedDateTime:String
+    UpdatedBy:String
+    BankName : String
+    BankAccountNumber:String
+    IFSCCode:String
+    Shift:String
 }
 
 input EmpInput {
-    EmpID: String! 
     FirstName: String!
     MiddleName: String
     LastName: String
@@ -56,6 +64,7 @@ input EmpInput {
     AADHAAR: String!
     PF_UAN: String!
     PassportNo: String!
+    ESI:String
     JobBand: String!
     EmploymentType: String!
     CompanyID: String!
@@ -70,6 +79,14 @@ input EmpInput {
     EmergencyContactNumber: String!
     EmergencyContactRelationship: String!
     Active:String!
+    CreatedBy:String
+    CreatedDateTime:String
+    UpdatedDateTime:String
+    UpdatedBy:String
+    BankName : String!
+    BankAccountNumber:String!
+    IFSCCode:String!
+    Shift:String!
 }
 
 

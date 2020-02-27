@@ -3,7 +3,11 @@ module.exports = {
     getemployeeDetails: async () => {
         try {
             let result = await employeeModel.find({Active:"Yes"});
+            //   let result = await employeeModel.find({Active:"Yes"}).sort({EmpID:-1}).limit(1);//orderby descending
+            //let result = await employeeModel.find({Active:"Yes"}).sort({EmpID:1});//orderby ascending
+            
             console.log(result);
+
             return result;
         } catch (err) {
         throw err;
@@ -24,12 +28,15 @@ module.exports = {
     },
     addEmpDetails: async (args, req) => {
         try{
+            let emp_result = await employeeModel.find({Active:"Yes"}).sort({EmpID:-1}).limit(1);//orderby descending
+            let EmpID = parseInt(emp_result[0].EmpID)+1;
+            
         // console.log("myobj="+args.empInput.dbType);
             var myobj = args.empInput;
-           // myobj["Active"] = "Yes";
+            myobj["EmpID"] = EmpID;
             var myData = new employeeModel(myobj);
            // console.log("myData="+myData);
-            myData.save();
+            await myData.save();
             return myData;
         }catch (err) {
         throw err;
@@ -61,10 +68,11 @@ module.exports = {
                     AADHAAR:args.empInput.AADHAAR,
                     PF_UAN:args.empInput.PF_UAN,
                     PassportNo:args.empInput.PassportNo,
+                    ESI:args.empInput.ESI,
                     Active:args.empInput.Active,
                     email:args.empInput.email,
                     personalEmailId:args.empInput.personalEmailId,
-                    EmpID:args.empInput.EmpID,
+                   // EmpID:args.empInput.EmpID,
                     bloodGroup:args.empInput.bloodGroup,
                     gender:args.empInput.gender,
                     ResignationDate:args.empInput.ResignationDate,
@@ -72,7 +80,13 @@ module.exports = {
                     EmergencyContactName:args.empInput.EmergencyContactName,
                     EmergencyContactNumber:args.empInput.EmergencyContactNumber,
                     EmergencyContactRelationship:args.empInput.EmergencyContactRelationship,
-                    Active:args.empInput.Active
+                    Active:args.empInput.Active,
+                    UpdatedBy:args.empInput.UpdatedBy,
+                    UpdatedDateTime:args.empInput.UpdatedDateTime,
+                    BankName : args.empInput.BankName,
+                    BankAccountNumber:args.empInput.BankAccountNumber,
+                    IFSCCode:args.empInput.IFSCCode,
+                    Shift:args.empInput.Shift
                     };
             let result = await employeeModel.findOneAndUpdate(_filterquery,_updatequery,{new: true});
             console.log(result);
